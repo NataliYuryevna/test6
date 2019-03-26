@@ -1,5 +1,9 @@
 {
  "items": [
+  {
+     "title": "amp-img",
+     "url": "/components/amp-img/"
+   },
    {
      "title": "amp-img",
      "url": "/components/amp-img/"
