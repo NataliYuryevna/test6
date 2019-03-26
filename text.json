@@ -1,8 +1,8 @@
 {
  "items": [
-  {
-     "title": "amp-img",
-     "url": "/components/amp-imgj/"
+   {
+     "title": "amp-carousel",
+     "url": "/components/amp-carousel/"
    },
    {
      "title": "amp-img",
