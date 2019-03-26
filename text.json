@@ -1,10 +1,6 @@
 {
  "items": [
    {
-     "title": "amp-carousel",
-     "url": "/components/amp-carousel/"
-   },
-   {
      "title": "amp-img",
      "url": "/components/amp-img/"
    },
