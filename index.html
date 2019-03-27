@@ -21,7 +21,7 @@
   </style>
 </head>
 <body>
-  <amp-state id="myState" src="https://nataliyuryevna.github.io/test6/text.json" on="fetch:myList.update"></amp-state>
+  <amp-state id="myState" src="https://nataliyuryevna.github.io/test6/text.json" on="fetch:myState.refresh"></amp-state>
   <amp-list id="myList" height="100" [src]="myState.items">
     <template type="amp-mustache">
       <div><a href="{{url}}">{{title}}</a></div>
