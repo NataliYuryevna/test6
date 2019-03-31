@@ -11,7 +11,6 @@
   <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
   <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
   <link rel="canonical" href="https://nataliyuryevna.github.io/test6/">
-  <link rel="first" href="https://nataliyuryevna.github.io/test4/">
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
   <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
   <style amp-custom>
@@ -22,12 +21,11 @@
   </style>
 </head>
 <body>
-  <amp-state id="myState" src="https://nataliyuryevna.github.io/test6/text.json" on="fetch:myState.refresh"></amp-state>
-  <amp-list id="myList" height="100" src="text.json">
-    <template type="amp-mustache">
+  <amp-state id="myState" src="https://nataliyuryevna.github.io/test4/text.json" on="fetch:myState.refresh"></amp-state><!-- 2 вариант, при нажатии refresh -->
+  <amp-list id="myList" height="100" src="https://nataliyuryevna.github.io/test4/text.json" template="myTemplate"></amp-list>
+    <template type="amp-mustache" id="myTemplate">
       <div><a href="{{url}}">{{title}}</a></div>
     </template>
-  </amp-list>
   <!--<button on="tap:myState.refresh"></button>-->
 </body>
 </html>
