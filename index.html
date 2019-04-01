@@ -21,11 +21,10 @@
   </style>
 </head>
 <body>
-  <amp-state id="myState" src="https://nataliyuryevna.github.io/test4/text.json" on="fetch:myState.refresh"></amp-state><!-- 2 вариант, при нажатии refresh -->
-  <amp-list id="myList" height="100" src="https://nataliyuryevna.github.io/test4/text.json" template="myTemplate"></amp-list>
-    <template type="amp-mustache" id="myTemplate">
-      {{#section}}<div><a href="{{url}}">{{title}}</a></div>{{/section}}
-    </template>
-  <!--<button on="tap:myState.refresh"></button>-->
+  <template type="amp-mustache" id="myTemplate">
+    {{#section}}<div><h4>{{text}}</h4><a href="{{urlButton}}" style="{{styleButton}}">{{textButton}}</a></div>{{/section}}
+  </template>
+  
+  <amp-list src="https://nataliyuryevna.github.io/test4/text.json" template="myTemplate"></amp-list>
 </body>
 </html>
